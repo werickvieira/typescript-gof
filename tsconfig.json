@@ -16,13 +16,13 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
-    "sourceMap": true,
+    "sourceMap": false,
     "noImplicitAny": true,
     "declaration": false,
     "module": "commonjs",
     "target": "es5",
     "allowJs": false,
-    "checkJs": true,
+    "checkJs": false,
     "strict": true,
     "esModuleInterop": true
   },
