@@ -5,7 +5,6 @@ import Multiply from './Multiply';
 
 const add = new Add();
 const multiply = new Multiply();
-
 const ctx = new Context(add);
 
 const operators: Operators = {
@@ -20,3 +19,5 @@ ctx.setContext(multiply);
 console.log("Multiply: ", ctx.execute(operators));
 
 // https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
+// Verificar Lint
+// Adicionar log
