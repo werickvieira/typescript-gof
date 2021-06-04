@@ -23,7 +23,7 @@
     "target": "es5",
     "allowJs": false,
     "checkJs": false,
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
