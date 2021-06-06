@@ -10,8 +10,8 @@ class Context {
     }
   }
 
-  setContext(operators: Operation): void {
-    this.operation = operators;
+  setContext(operationType: Operation): void {
+    this.operation = operationType;
   }
 
   getContext(): Operation {

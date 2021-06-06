@@ -4,6 +4,9 @@ import Add  from './Add';
 import Substract  from './Substract';
 import Multiply from './Multiply';
 import Division from './Division';
+import Logger from '../../helpers/log/index';
+
+const logger = Logger.child({"package":"strategy/math"})
 
 const add = new Add();
 const substract = new Substract();
@@ -18,18 +21,44 @@ const operators: Operators = {
 }
 
 ctx.setContext(add);
-console.info("Add: ", ctx.execute(operators));
+
+logger.log('debug', {
+  method: 'add',
+  parameters: operators,
+  result: ctx.execute(operators)
+});
 
 ctx.setContext(multiply);
-console.info("Multiply: ", ctx.execute(operators));
+
+logger.log('debug', {
+  method: 'multiply',
+  parameters: operators,
+  result: ctx.execute(operators)
+});
 
 ctx.setContext(substract);
-console.info("Substract: ", ctx.execute(operators));
+
+logger.log('debug', {
+  method: 'substract',
+  parameters: operators,
+  result: ctx.execute(operators)
+});
 
 ctx.setContext(division);
-console.info("Division: ", ctx.execute(operators));
 
-// - ADICIONAR LOG
-// - CRIAR O TESTE PARA FUNÇÃO DIVISION
-// - VERIFICAR O USO DO NODEMON
-// - VERIFICAR GRACEFUL SHUTDOWN
+logger.log('debug', {
+  method: 'division',
+  parameters: operators,
+  result: ctx.execute(operators)
+});
+
+ctx.setContext(add);
+
+operators.numberA = 100
+operators.numberB = 200
+
+logger.log('debug', {
+  method: 'add',
+  parameters: operators,
+  result: ctx.execute(operators)
+});
