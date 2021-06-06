@@ -6,7 +6,7 @@ import Multiply from './Multiply';
 import Division from './Division';
 import Logger from '../../helpers/log/index';
 
-const logger = Logger.child({"package":"strategy/math"})
+const logger = Logger.child({ "package":"strategy/math" })
 
 const add = new Add();
 const substract = new Substract();

@@ -1,24 +1,29 @@
-# Commit Messages
+# Patterns
 
-```
-feat: add hat wobble
-^--^  ^------------^
-|     |
-|     +-> Summary in present tense.
-|
-+-------> Type: chore, docs, feat, fix, refactor, style, or test.
-```
+  This repository is used to have learned about **Design Patterns**  ([GOF](https://en.wikipedia.org/wiki/Design_Patterns)). I picked up some patterns and write them using typescript. 
 
-Examples:
+    .
+    ├── ...
+    ├── src                    
+    │   ├── helpers          
+    │   ├── strategies          
+    |   |   ├── math              
+    |   |   └── another 
+    |   ├── observer
+    |   |   ├── math
+    |   |   └── another
+    |   ├── facade
+    |   |   ├── math
+    |   |   └── another 
+    |   |
+    |   |           
+    └── ...
 
-- `feat`: (new feature for the user, not a new feature for build script)
-- `fix`: (bug fix for the user, not a fix to a build script)
-- `docs`: (changes to the documentation)
-- `style`: (formatting, missing semi colons, etc; no production code change)
-- `refactor`: (refactoring production code, eg. renaming a variable)
-- `test`: (adding missing tests, refactoring tests; no production code change)
-- `chore`: (updating grunt tasks etc; no production code change)
+## References
 
-Reference:
+- Strategy
+  - [tutorialspoint](https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm)
 
-- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

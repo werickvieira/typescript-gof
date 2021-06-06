@@ -5,7 +5,7 @@ describe("ADD CLASS BEHAVIOR", () => {
 
   const add = new Add();
 
-  it("should return 10", () => {
+  it("should return 20", () => {
     const operators: Operators = {
       numberA: 10,
       numberB: 10,

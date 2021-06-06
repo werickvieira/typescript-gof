@@ -13,6 +13,7 @@
       // different options with a single tsconfig.json.
     }
   },
+
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",

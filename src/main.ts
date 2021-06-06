@@ -1,2 +1,2 @@
-import './strategy/math/Index';
+import './strategies/math/Index';
 
