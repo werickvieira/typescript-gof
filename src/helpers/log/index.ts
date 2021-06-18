@@ -9,9 +9,13 @@ const format = winston.format.combine(
 
 const Logger = winston.createLogger({
   transports: [
-    new winston.transports.Console({ level: 'debug' }),
+    new winston.transports.Console({
+      level: 'debug',
+      silent: process.env.NODE_ENV === 'test'
+    }),
   ],
   format,
 });
+
 
 export default Logger;

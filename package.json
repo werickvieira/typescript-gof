@@ -4,7 +4,7 @@
   "description": "learning design pattern",
   "main": "index.ts",
   "scripts": {
-    "test": "jest --no-cache",
+    "test": "NODE_ENV=test jest --no-cache",
     "start": "ts-node ./src/main.ts",
     "build": "tsc -p .",
     "lint": "eslint -c .eslintrc.json --ext .ts ./src"

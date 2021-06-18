@@ -8,7 +8,7 @@
     │   ├── helpers          
     │   ├── strategies          
     |   |   ├── math              
-    |   |   └── another 
+    |   |   └── memory 
     |   ├── observer
     |   |   ├── math
     |   |   └── another
@@ -23,6 +23,7 @@
 
 - Strategy
   - [tutorialspoint](https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm)
+  - [golangbyexample](https://golangbyexample.com/strategy-design-pattern-golang/)
 
 
 ## License
